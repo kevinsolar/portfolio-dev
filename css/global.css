@@ -19,6 +19,7 @@
    --subtitle: 400 clamp(1.125rem, 1.2vw, 1.25rem)/120% 'Inconsolata', monospace;
    --text: 400 1rem/140% 'Maven Pro', sans-serif;
    --text-sm: 400 0.875rem/140% 'Maven Pro', sans-serif;
+   scroll-behavior: smooth;
 }
 
 * {

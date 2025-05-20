@@ -1,98 +1,204 @@
 #hero {
-	display: flex;
-	align-items: center;
-	text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
-	&.container-full {
-		position: relative;
-		min-height: 100vh;
+  &.container-full {
+    position: relative;
+    min-height: 100vh;
 
-		.hero-bg {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-		}
-		.hero-bg img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-		}
-	}
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
 
-	.container {
-		position: relative;
-		z-index: 9;
-	}
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 
-	.main-info {
-		gap: 80px;
+  .container {
+    position: relative;
+    z-index: 9;
+  }
 
-		.infos {
-			width: 680px;
-			max-width: 55%;
-		}
-		.text-info {
-			gap: 20px;
-		}
+  .main-info {
+    gap: 80px;
 
-		span {
-			color: var(--color-red);
-		}
+    .infos {
+      width: 680px;
+      max-width: 55%;
+    }
 
-		.tecnos {
-         gap: 16px;
-         margin-bottom: 94px;
+    .text-info {
+      gap: 20px;
+    }
 
-			.tag {
-				gap: 8px;
-				padding: 8px 16px;
-				background-color: var(--gray-300);
-				border-radius: 999px;
+    span {
+      color: var(--color-red);
+    }
 
-				img {
-					width: 24px;
-					height: 24px;
-					object-fit: contain;
-				}
-			}
-		}
+    .tecnos {
+      gap: 16px;
+      margin-bottom: 94px;
 
-      .arrow-down i {
-         font-size: 32px;
+      .tag {
+        gap: 8px;
+        padding: 8px 16px;
+        background-color: var(--gray-300);
+        border-radius: 999px;
+
+        img {
+          width: 24px;
+          height: 24px;
+          object-fit: contain;
+        }
       }
-	}
+    }
+
+    .arrow-down i {
+      font-size: 32px;
+    }
+  }
 }
 
 #projects {
-   padding-block: 72px 144px;
+  padding-block: 72px 144px;
 
-   h2.red {
-      margin-bottom: 8px;
-   }
+  h2.red {
+    margin-bottom: 8px;
+  }
 
-   .card {
-      padding: 12px;
+  .card {
+    padding: 12px;
+    border-radius: 12px;
+    gap: 20px;
+    background-color: var(--gray-300);
+    transition: all 0.375s ease-in-out;
+
+    &:hover {
+      transform: scale(1.07);
+      border: 3px solid var(--gray-400);
+    }
+
+    .card-img {
+      overflow: hidden;
       border-radius: 12px;
-      gap: 20px;
 
-      .card-img {
-         overflow: hidden;
-         border-radius: 12px;
-
-         img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-         }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
       }
+    }
 
-      .card-info {
-      	text-align: left;
-         gap: 8px;
-      }
+    .card-info {
+      text-align: left;
+      gap: 8px;
+      padding: 4px;
+    }
+  }
+}
 
-   }
+#services {
+  background-color: var(--gray-100);
+  padding-block: 88px 120px;
+
+  .card {
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid var(--gray-200);
+    width: 320px;
+    max-width: 100%;
+    transition: all 0.375s ease-in-out;
+
+    &:hover {
+      border: 2px solid var(--gray-400);
+      transform: scale(1.07);
+    }
+
+    .card-info {
+      gap: 8px;
+    }
+
+    i {
+      font-size: 48px;
+    }
+  }
+}
+
+footer {
+  padding-block: 120px 160px;
+  position: relative;
+
+  .container-full {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 0;
+
+    .footer-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .footer-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 9;
+  }
+
+  .link {
+    width: 400px;
+    max-width: 100%;
+    gap: 12px;
+    padding: 18px;
+    background-color: var(--gray-300);
+    border-radius: 8px;
+    transition: all 0.375s ease-in-out;
+    border: 2px solid var(--gray-300);
+
+    &:hover {
+      border-color: var(--gray-400);
+    }
+
+    &>div {
+      flex: 1;
+    }
+
+    i {
+      color: var(--gray-400);
+      font-size: 24px;
+    }
+
+    p {
+      color: var(--gray-500);
+    }
+
+    i.blue {
+      color: var(--color-blue);
+    }
+
+    &:hover i,
+    &:hover p {
+      transition: all 0.375s ease-in-out;
+      color: var(--color-blue);
+    }
+  }
 }
